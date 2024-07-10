@@ -4,6 +4,6 @@ FactoryBot.define do
     price { Faker::Commerce.price(range: 1..10) }
     stock { Faker::Number.between(from: 5, to: 20) }
     category { "Ice Cream" }
-    truck { Truck.last }
+    association :truck
   end
 end
