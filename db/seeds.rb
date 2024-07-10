@@ -8,6 +8,14 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+puts "Deleting previous order_items..."
+OrderItem.destroy_all
+puts "...Order items deleted."
+
+puts "Deleting previous orders..."
+Order.destroy_all
+puts "...Orders deleted."
+
 puts "Deleting previous customers..."
 Customer.destroy_all
 puts "...Customers deleted."
