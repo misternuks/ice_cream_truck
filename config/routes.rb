@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
+      get 'customers/create'
       resources :food_items, only: %i[index show]
       resources :orders, only: [:create]
       resources :customers, only: [:create]
