@@ -10,12 +10,12 @@ class OrderItem < ApplicationRecord
   private
 
   def sufficient_stock
-    if food_item.stock < stock
-      errors.add(:stock, "SO SORRY!")
+    if food_item.stock < quantity
+      errors.add(:quantity, "SO SORRY!")
     end
   end
 
   def decrement_stock
-    food_item.update(stock: food_item.stock - stock)
+    food_item.update(quantity: food_item.stock - quantity)
   end
 end
