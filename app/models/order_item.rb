@@ -16,6 +16,6 @@ class OrderItem < ApplicationRecord
   end
 
   def decrement_stock
-    food_item.update(quantity: food_item.stock - quantity)
+    food_item.update(stock: food_item.stock - quantity)
   end
 end

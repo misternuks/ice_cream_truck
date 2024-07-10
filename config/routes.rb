@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :food_items, only: %i[index show]
       resources :orders, only: [:create]
+      resources :customers, only: [:create]
     end
   end
 
