@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  price: 1
+  name: MyString
+  flavor: MyString
+  stock: 1
+  truck: one
+
+two:
+  category: MyString
+  price: 1
+  name: MyString
+  flavor: MyString
+  stock: 1
+  truck: two
